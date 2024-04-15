@@ -19,7 +19,7 @@ add_executable(saxpy)
 target_sources(saxpy PRIVATE main.cpp)
 
 find_package(fmt REQUIRED)
-target_link_libraries(saxpy fmt)
+target_link_libraries(saxpy fmt::fmt)
 
 set(MODEL "SERIAL" CACHE STRING "CPU model to choose")
 
